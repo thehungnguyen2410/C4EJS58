@@ -1,0 +1,83 @@
+<html>
+
+<head>
+
+<body>
+    <script>
+        /*{
+            var banKinh = prompt("Nhap vao ban kinh hinh tron");
+            let chuVIHinhTron = 2 * Math.PI * banKinh;
+            let dienTichHinhTron = Math.PI * Math.pow(banKinh, 2);
+            console.log(chuVIHinhTron);
+            console.log(dienTichHinhTron);
+        }
+
+        {
+            var chieuDai = prompt("Nhap vao chieu dai cua hinh chu nhat");
+            var chieuRong = prompt("Nhap vao chieu rong cua hinh chu nhat");
+            let chuViChuNhat = (chieuDai + chieuRong) * 2;
+            let dienTichChuNhat = chieuDai * chieuRong;
+            console.log(chuViChuNhat);
+            console.log(dienTichChuNhat);
+        }
+
+        {
+            var y1;
+            var y2;
+            var x = prompt("Hay nhap gia tri cua x");
+            y1 = 4 * (Math.pow(x, 2) + 10 * x * Math.sqrt(x) + 3 * x + 1);
+            y2 = ((Math.sin(Math.PI * Math.pow(x, 2)) + Math.sqrt(Math.pow(x, 2) + 1)) / (Math.pow(Math.E, 2 * x) + Math
+                .cos(Math.PI * x / 4)));
+            console.log(y1);
+            console.log(y2);
+        }*/
+
+        {
+            var xVND = prompt("Hay nhap so tien");
+            var z1;
+            var z2;
+            var z3;
+            var z4;
+            z1 = Math.floor(xVND / 100000);
+
+            if ((xVND - (z1 * 100000)) < 50000) {
+                z2 = 0;
+            } else {
+                z2 = 1;
+            }
+
+            if ((xVND - (z1 * 100000) - (z2 * 50000)) < 20000) {
+                z3 = 0;
+            } else if ((xVND - (z1 * 100000) - (z2 * 50000)) === 40000) {
+                z3 = 2;
+            } else {
+                z3 = 1;
+            }
+
+            if ((xVND - (z1 * 100000) - (z2 * 50000) - (z3 * 20000)) === 10000) {
+                z4 = 1;
+            } else {
+                z4 = 0;
+            }
+            /*console.log(z1 + " " + "to 100.000 +" + " " + z2 + " " + "to 50.000 +" + " " + z3 + " " + "to 20.000 +" +
+                " " + z4 + " " + "to 10.000");*/
+
+            console.log(`${z1} to 100.000 + ${z2} to 50.000 + ${z3} to 20.000 + ${z4} to 10.000`);
+        }
+
+        {
+            var x3ChuSo = prompt("Hay nhap mot so co ba chu so");
+            var soHangTram = Math.floor(x3ChuSo / 100);
+            var soHangChuc = Math.floor((x3ChuSo - soHangTram * 100) / 10);
+            var soHangDonVi = x3ChuSo - soHangTram * 100 - soHangChuc * 10;
+            let tongBaChuSo = soHangTram + soHangChuc + soHangDonVi;
+            /*console.log("So" + " " + x3ChuSo + " " + "co tong ba chu so bang =" + " " + tongBaChuSo);*/
+
+            console.log(`So ${x3ChuSo} co tong ba chu so bang = ${tongBaChuSo}`);
+
+        }
+    </script>
+</body>
+</head>
+
+</html>
